@@ -1,0 +1,21 @@
+[project]
+name = "voting-board-backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mohammed Suhail Habid",email = "suhailhabid@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=6.0.5,<7.0.0)",
+    "djangorestframework (>=3.17.1,<4.0.0)",
+    "django-cors-headers (>=4.9.0,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "voting_board_backend", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
