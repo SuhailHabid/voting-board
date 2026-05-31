@@ -5,7 +5,6 @@ description = ""
 authors = [
     {name = "Mohammed Suhail Habid",email = "suhailhabid@gmail.com"}
 ]
-readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "django (>=6.0.5,<7.0.0)",
@@ -14,7 +13,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "voting_board_backend", from = "src"}]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
